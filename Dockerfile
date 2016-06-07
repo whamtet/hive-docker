@@ -10,4 +10,5 @@ RUN	tar -zxvf ./apache-hive-${HIVE_VERSION}-bin.tar.gz &&\
   	rm -f ./apache-hive-${HIVE_VERSION}-bin.tar.gz &&\
     ${HIVE_HOME}/bin/schematool -initSchema -dbType derby
 
+CMD /etc/bootstrap.sh -bash
 
